@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+    body{margin:0;}
+    #canvas{
+      background-color: red;
+      border:1px solid green;
+      height: 100vh;
+      position:relative;
+    }
+    
+  </style>
+</head>
+  
+<body>
+<div id="canvas"></div>
+  <div></div>
+  <script>
+    var div=document.getElementById('canvas')
+var painting = false
+div.onmousedown=function(aa){
+  painting=true
+  var x=aa.clientX
+  var y=aa.clientY
+  //console.log(x,y)
+  var divA=document.createElement('div')
+  divA.style='width:6px;height:6px;'+'background-color:green;'+'border-radius:3px;'+'position:absolute;'+'top:'+(y-3)+'px;'+'left:'+(x-3)+'px;'
+  div.appendChild(divA)
+}
+div.onmousemove=function(aa){
+   //console.log('2')
+  if(painting){
+      var x=aa.clientX
+  var y=aa.clientY
+  //console.log(x,y)
+  var divA=document.createElement('div')
+  divA.style='width:6px;height:6px;'+'background-color:green;'+'border-radius:3px;'+'position:absolute;'+'top:'+(y-3)+'px;'+'left:'+(x-3)+'px;'
+  div.appendChild(divA)
+  }
+}
+div.onmouseup=function(cc){
+  painting=false
+  console.log('3')
+}
+  </script>
+</body>
+</html>

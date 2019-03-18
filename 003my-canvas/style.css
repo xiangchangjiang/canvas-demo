@@ -1,0 +1,110 @@
+#xxx{
+  /* background:grey; */
+  display:block;
+/* ================= */
+  position:fixed;
+  top:0;
+  left:0;             /*解决移动端页面跳动问题*/
+  /* ===================== */
+}
+body{ overflow: hidden;}
+.action{
+  position:fixed;
+  top:0px;
+  left:0px;
+  padding:15px;
+}
+/* .active #brush{
+  display: none;
+}
+.active.x #brush{
+  display:inline-block;
+}
+.active.x #eraser{
+  display: none;
+} */
+
+#buttonWrapper svg.active{
+  fill: red;
+  transform :scale(1.2)
+}
+.action .icon{
+  margin-right:10px;
+}
+.colors{
+  position:fixed;
+  top:40px;
+  left:10px;
+  /* border:1px solid yellow; */
+  text-align: center;
+  line-height: 20px;
+
+  
+}
+ol,li{list-style: none;}
+*{
+  margin:0;padding:0;
+}
+.colors li{
+  width:20px;
+  height:20px;
+  border:3px solid transparent;
+  margin:20px 0;
+  border-radius:50%;
+  color:transparent;
+  cursor: pointer;
+}
+.colors li.black{
+  background: black;
+}
+.colors li.red{
+  background: red;
+}
+.colors li.green{
+  background: green;
+}
+.colors li.blue{
+  background: blue;
+}
+
+.colors li.active{
+  border:3px solid rgba(255,255,5,0.8);
+  color:white;
+}
+.sizes{
+  position: fixed;
+  right:20px;
+  top:40px;
+ }
+.sizes li{
+  margin:10px 0;
+  padding:10px 0;
+  cursor:pointer;
+}
+
+.sizes .thin{
+  height:0;
+  width:20px;
+  border-top: 3px solid black;
+}
+
+.sizes .thick{
+  height:0;
+  width:20px;
+  border-top: 6px solid black;
+}
+.sizes .thin.active{
+  transform:scale(1.2);
+}
+.sizes .thick.active{
+  transform:scale(1.2);
+}
+
+
+
+
+
+
+
+
+

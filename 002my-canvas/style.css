@@ -1,0 +1,20 @@
+#xxx{
+  background:white;
+  display:block;
+  
+}
+body{margin:0;}
+.active{
+  position:fixed;
+  bottom:0px;
+  left:0px;
+}
+.active #brush{
+  display: none;
+}
+.active.x #brush{
+  display:inline-block;
+}
+.active.x #eraser{
+  display: none;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+  <style type="text/css">
+    .icon {
+       width: 2em; height: 2em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+       transition:all 0.3s;
+    }
+</style>
+
+
+
+  <title>my canvas 03</title>
+  <link rel="stylesheet" href="./style.css">
+ 
+</head>
+<body>
+<canvas id='xxx' width=300 height=300></canvas>
+<div id='buttonWrapper' class="action">
+  <svg id='pen' class="icon active" >
+    <use xlink:href="#icon-pen"></use>
+  </svg>
+  <svg id='eraser' class="icon" >
+    <use xlink:href="#icon-eraser"></use>
+  </svg>
+  <svg id='clear' class="icon" >
+    <use xlink:href="#icon-clear"></use>
+  </svg>
+  <svg id='save' class="icon" >
+    <use xlink:href="#icon-save"></use>
+  </svg>
+
+  <!-- <button id='eraser'>橡皮擦</button>
+  <button id='brush'>画笔</button> -->
+</div>
+<ol class="colors">
+  <li id='black' class='black active'>☆</li>
+  <li id='red' class='red'>☆</li>
+  <li id='green' class='green'>☆</li>
+  <li id='blue' class='blue'>☆</li>
+</ol>
+<ol class="sizes">
+  <li id='thin' class='thin' title="细线"></li>
+  <li id='thick' class='thick' title="粗线"></li>
+</ol>
+<script src='./mian.js'></script>
+<script src="//at.alicdn.com/t/font_1093591_0va691rx06he.js"></script>
+</body>
+</html>
